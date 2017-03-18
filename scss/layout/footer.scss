@@ -1,0 +1,36 @@
+﻿.footer{
+	background-color: $bg-color-dark;
+	line-height: 100px;
+	
+}
+
+.copy{
+	font-size: $font-size-sm;
+}
+.social-item{
+	margin-left: 30px;
+	color: $color-font-white;
+}
+
+.social-item>a{
+	color: $color-font-white;
+}
+.social-item>a:hover{
+		color: $color-primary;
+}
+
+@media (max-width: 550px){
+	.footer .column-left, .footer .column-right{
+		float: none;
+		text-align: center;
+	}
+
+	.social-item:first-child{
+		margin: 0;
+	}
+
+	.footer{
+		line-height: 50px;
+	
+	}
+}

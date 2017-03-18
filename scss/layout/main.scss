@@ -1,0 +1,255 @@
+﻿html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.landing-page{
+	background-color: $bg-color-light;
+	min-height: 100vh;
+}
+
+.landing{
+	text-align: center;
+	padding-top: 10%;
+}
+
+.logo-img{
+	margin-bottom: 50px;
+}
+
+.landing h1{
+	margin-top: 45px;
+	margin-bottom: 85px;
+}
+
+.quote{
+	background-color: $bg-color-primary;
+	padding-top: 120px;
+}
+
+.quote .h2{
+	line-height: 2;
+}
+
+.quote .block-discription{
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.portfolio{
+	text-align: center;
+}
+
+.portfolio>ul{
+	margin-bottom: 30px;
+}
+
+.portfolio-item{
+	background-color: $bg-color-lighten;
+	display: inline-block;
+	width: 267px;
+	height: 200px;
+	margin: 10px;
+	position: relative;
+}
+
+.portfolio-item:hover{
+	background-color: $bg-color-primary;
+	z-index: 5;
+}
+
+.portfolio-item:hover:after{
+	content: 'worning!!!';
+	position: absolute;
+	color: $color-font;
+	text-transform: uppercase;
+	font-size: $font-size-md;
+	left: 85px;
+	top: 80px;
+}
+
+.portfolio-item:hover:before{
+	content: 'shocking good art';
+	position: absolute;
+	color: $color-font-white;
+	text-transform: uppercase;
+	font-size: $font-size-base;
+	left: 62px;
+	top: 112px;
+}
+
+.arrow{
+	margin-top: 25px;
+}
+
+
+.clients-box{
+	background-color: $bg-color-darken;
+}
+
+.container{
+	/*width: 80%;*/
+	max-width: 1200px;
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.block{
+	padding-bottom: 120px;
+}
+
+
+.block-heading{
+		padding-top: 115px;
+		padding-bottom: 115px;
+		text-align: center;
+}
+
+.block-discription{
+	text-transform: uppercase;
+}
+
+.column-left{
+	float: left;
+}
+
+.column-right{
+	float: right;
+}
+
+.features{
+	margin-bottom: 45px;
+}
+
+.feature-item{
+	width: 33%;
+	padding-left: 4%;
+	padding-right: 4%;
+	text-align: center;
+}
+
+
+
+.number{
+	font-size: $font-size-md;
+	display: inline-block;
+	padding-right: 25px;
+	position: relative;
+}
+
+.number:after{
+	content: '';
+	display: block;
+	border-bottom: 1px solid $color-primary;
+	width: 40px;
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+	transform: rotate(90deg);
+
+}
+
+.feature-name{
+	color: $color-font;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+
+.feature-discription{
+	color: $color-font-light;
+	display: block;
+}
+
+.client-item{
+	width: 16%;
+	text-align: center;
+}
+
+.form{
+	width: 80%;
+	margin: auto;
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px){
+	.number, .feature-name{
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.number:after{				
+		display: none;
+	}
+
+}
+
+
+@media (max-width: 900px){
+	.feature-item{
+		width: 100%;
+		margin-bottom: 80px;
+	}
+
+	.feature-name{
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media (max-width: 550px){
+	.client-item{
+		width: 32%;
+		margin-bottom: 60px;
+	}
+
+}
+
+@media (max-width: 360px){
+	.feature-item{
+		padding: 0;
+	}
+
+	.number{
+		font-size: $font-size-base;
+		font-weight: bold;
+		padding-right: 15px;
+	}
+
+	.number:after{				
+		display: none;
+	}
+}

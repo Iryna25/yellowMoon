@@ -1,0 +1,31 @@
+.button{
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: none;
+    padding: 18px;
+}
+
+
+.btn-primary{
+    color: $color-font-white;
+    font-size: $font-size-base;
+    background: $bg-color-light;
+    border: 1px solid $color-primary;
+    min-width: 234px;
+    margin: 25px;
+}
+
+.btn-long{
+    color: $color-primary;
+    font-size: $font-size-md;
+    background: $bg-color-dark;
+    border: none;
+    width: 100%;
+}
+
+.button:hover {
+    color: $color-primary;
+    background: $bg-color-darken;
+}
+

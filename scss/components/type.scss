@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    color: $color-primary;
+    font-family: $font-family-base;
+}
+
+.h1{
+    font-size: $font-size-xl;
+}
+
+.h2{
+    color: $color-font;
+    font-size: $font-size-lg;
+    text-transform: uppercase;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.light{
+    font-family: $font-family-light;
+}
+
+
+.white{
+    color: $color-font-white;
+}
