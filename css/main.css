@@ -34,6 +34,10 @@ input, textarea {
 :-ms-input-placeholder {
   color: #ffffff; }
 
+@media (max-width: 550px) {
+  .short {
+    width: 100%; } }
+
 .button {
   display: inline-block;
   cursor: pointer;
@@ -98,14 +102,49 @@ body {
 .nav-item > a {
   color: #8e8e8e; }
 
-.nav-item > a:hover {
-  color: #131316;
-  border: 1px solid #ffe600;
-  padding: 15px 25px; }
+@media (min-width: 901px) {
+  .nav-item > a:hover {
+    color: #131316;
+    border: 1px solid #ffe600;
+    padding: 15px 25px; } }
 
 @media (max-width: 900px) {
   .navbar-collapse {
-    display: none; } }
+    display: none;
+    float: none;
+    clear: both; }
+  .navbar-toggle {
+    display: block;
+    float: right;
+    width: 80px;
+    height: 65px;
+    background-color: #f3f3f3;
+    border: 2px solid #ffe600;
+    border-radius: 4px;
+    padding-top: 5px; }
+  .header .column-left, .header .column-right {
+    float: none; }
+  .navbar-toggle span {
+    display: block;
+    border: solid 2px #ffe600;
+    width: 55px;
+    margin: 10px auto; }
+  .collapse {
+    display: block; }
+  .navi {
+    padding: 0; }
+  .nav-item {
+    display: block;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    line-height: 55px;
+    border-bottom: solid 1px #ffe600; } }
+
+@media (max-width: 550px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0; } }
 
 html {
   box-sizing: border-box; }
@@ -291,6 +330,8 @@ a {
     margin-bottom: 60px; } }
 
 @media (max-width: 360px) {
+  .landing .arrow {
+    display: none; }
   .feature-item {
     padding: 0; }
   .number {

@@ -239,6 +239,10 @@ a{
 }
 
 @media (max-width: 360px){
+	.landing .arrow{
+		display: none;
+	}
+	
 	.feature-item{
 		padding: 0;
 	}

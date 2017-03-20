@@ -30,3 +30,10 @@ input, textarea{
 ::-moz-placeholder          {color: $color-font-white;}/* Firefox 19+ */
 :-moz-placeholder           {color: $color-font-white;}/* Firefox 18- */
 :-ms-input-placeholder      {color: $color-font-white;}
+
+@media (max-width: 550px){
+    .short{
+    width: 100%;
+}
+
+}

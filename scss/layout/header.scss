@@ -18,15 +18,69 @@
 	color: $color-font-light;
 }
 
-.nav-item>a:hover{
+
+
+@media (min-width: 901px){
+	.nav-item>a:hover{
 	color: $color-font;
 	border: 1px solid $color-primary;
 	padding: 15px 25px;
+	}
 }
 
 @media (max-width: 900px){
 	.navbar-collapse{
 		display: none;
+		float: none;
+		clear: both;
+	}
+	
+	.navbar-toggle{
+		display: block;
+		float: right;
+		width: 80px;
+		height: 65px;
+		background-color: $bg-color-lighten;
+		border: 2px solid $color-primary;
+		border-radius: 4px;
+		padding-top: 5px;
+	}
+	
+	.header .column-left, .header .column-right{
+		float: none;
+		
+	}
+
+	.navbar-toggle span{
+		display: block;
+		border: solid 2px $color-primary;
+		width: 55px;
+		margin: 10px auto;
+	}
+
+	.collapse{
+		display: block;
+	}
+	
+	.navi{
+		padding: 0;
+	}
+
+	.nav-item{
+		display: block;
+		height: 50px;
+		margin: 0px;
+		text-align: center;
+		line-height: 55px;
+		border-bottom: solid 1px $color-primary;
 	}
 
 }	
+
+
+@media (max-width: 550px){
+	.header{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
