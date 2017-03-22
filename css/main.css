@@ -97,16 +97,17 @@ body {
   padding-right: 30px; }
 
 .nav-item {
-  margin-left: 40px; }
+  margin-left: 20px; }
 
 .nav-item > a {
-  color: #8e8e8e; }
+  color: #8e8e8e;
+  border: 1px solid transparent;
+  padding: 10px; }
 
 @media (min-width: 901px) {
   .nav-item > a:hover {
     color: #131316;
-    border: 1px solid #ffe600;
-    padding: 15px 25px; } }
+    border: 1px solid #ffe600; } }
 
 @media (max-width: 900px) {
   .navbar-collapse {
@@ -116,19 +117,19 @@ body {
   .navbar-toggle {
     display: block;
     float: right;
-    width: 80px;
-    height: 65px;
+    width: 60px;
+    height: 45px;
     background-color: #f3f3f3;
     border: 2px solid #ffe600;
     border-radius: 4px;
-    padding-top: 5px; }
+    padding-top: 2px; }
   .header .column-left, .header .column-right {
     float: none; }
   .navbar-toggle span {
     display: block;
     border: solid 2px #ffe600;
-    width: 55px;
-    margin: 10px auto; }
+    width: 40px;
+    margin: 7px auto; }
   .collapse {
     display: block; }
   .navi {
@@ -174,13 +175,12 @@ a {
   display: block;
   clear: both; }
 
-.landing-page {
-  background-color: #89898b;
-  min-height: 100vh; }
-
 .landing {
   text-align: center;
   padding-top: 10%; }
+  .landing-page {
+    background-color: #89898b;
+    min-height: 100vh; }
 
 .logo-img {
   margin-bottom: 50px; }
@@ -214,27 +214,36 @@ a {
   margin: 10px;
   position: relative; }
 
-.portfolio-item:hover {
-  background-color: #ffeb33;
-  z-index: 5; }
-
-.portfolio-item:hover:after {
-  content: 'worning!!!';
+.portfolio-item > img {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  color: #131316;
-  text-transform: uppercase;
-  font-size: 20px;
-  left: 85px;
-  top: 80px; }
+  left: 0;
+  top: 0; }
 
-.portfolio-item:hover:before {
-  content: 'shocking good art';
+.hover-block {
+  display: none; }
+
+.portfolio-item:hover .hover-block {
+  display: block;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 15px;
-  left: 62px;
-  top: 112px; }
+  left: 0;
+  top: 0;
+  background-color: #ffeb33; }
+  .portfolio-item:hover .hover-block .h3 {
+    color: #131316;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  .portfolio-item:hover .hover-block .text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block; }
 
 .arrow {
   margin-top: 25px; }
@@ -243,7 +252,6 @@ a {
   background-color: #424245; }
 
 .container {
-  /*width: 80%;*/
   max-width: 1200px;
   margin: auto;
   padding-left: 15px;

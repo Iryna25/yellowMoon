@@ -13,8 +13,8 @@ $ ('.landing .arrow a').click(function(e){
  e.preventDefault();
 
 	var target = $(this).attr('href');
-	$(target).addClass('collapse');
-})
+	$(target).toggleClass('collapse');
+});
 
- 
+
 })
